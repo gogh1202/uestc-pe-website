@@ -1,0 +1,11 @@
+<?php
+
+	$host_name = "203.198.128.88";
+ 	$mysql_account = "magicsdz";
+ 	$passwd = "911028destiny";
+
+ 	@mysql_connect($host_name, $mysql_account, $passwd) or die("cannot connect mysql server...");
+	@mysql_select_db("academy") or die("database access error!");
+	mysql_query("set names 'utf8'");
+
+?> 
